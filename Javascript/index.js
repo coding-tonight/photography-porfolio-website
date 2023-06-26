@@ -42,6 +42,8 @@ window.onmousemove = event => handleMove(event);
 // calling the function 
 window.onmousedown = event => handleDown(event);
 
+window.onscroll =event => handleMove(event);
+
 window.onmouseup = event => handleUp(event)
 
 // mobile 
