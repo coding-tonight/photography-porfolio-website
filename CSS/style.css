@@ -1,3 +1,5 @@
+@import './cursor.css';
+
 *  ,*::after , *::before { 
     margin: 0;
     padding: 0;
@@ -17,6 +19,11 @@ body {
     scroll-behavior: smooth;
 }
 
+
+.navbar  a{ 
+   text-decoration: none;
+   color: var(--font_color);
+}
 /* reusable css */
 
 
@@ -36,3 +43,4 @@ body {
     object-fit: cover;
     object-position: 100% center;   
 }
+
