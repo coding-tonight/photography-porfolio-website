@@ -18,19 +18,16 @@ body {
 }
 
 /* reusable css */
-.flex { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-}
+
 
 .container { 
     display: flex;
-    align-items: center;
     gap: 1rem;
-    transform: translateX(50%);
-    transform: all 1s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    user-select: none;
 }
 
 .container .image { 
@@ -38,4 +35,5 @@ body {
     height: 350px;
     object-fit: cover;
     object-position: 50% 50%;
+   
 }
