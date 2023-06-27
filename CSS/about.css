@@ -1,0 +1,15 @@
+.about .content { 
+   width: 90%;
+   margin: 0 auto;
+}
+
+.about .content .hero { 
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 5px;
+   margin:  10px 0;
+}
+.about .content .hero p {
+    width: 50%;
+}

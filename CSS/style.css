@@ -1,5 +1,6 @@
 /* importing google font */
 @import url('https://fonts.googleapis.com/css?family=Agdasima&display=swap');
+@import './about.css';
 @import './cursor.css';
 
 *,
@@ -23,7 +24,7 @@ body {
     height: 100vh;
     overflow: hidden;
     scroll-behavior: smooth;
-    cursor: none;
+    /* cursor: url(dot.cur); */
     font-family: 'Agdasima', serif;
 }
 
