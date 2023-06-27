@@ -3,10 +3,11 @@
     height: 80px;
     width: 80px;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,92,184,1) 35%, rgba(36,141,156,1) 92%);
+    background: linear-gradient(90deg, rgb(237, 244, 252) 0%, rgba(20,92,184,1) 35%, rgba(36,141,156,1) 92%);
     aspect-ratio: 1;
     border-radius: 50%;
-    filter: blur(20px);
+    filter: blur(10px);
+    backdrop-filter: drop-shadow(4px 4px 10px crimson);
     animation: cursor 2s infinite ease;
     opacity: 0.8;
  }
@@ -15,6 +16,9 @@
  @keyframes cursor {
     0% {
         transform: rotate(0deg);
+    }
+    50% {
+        scale: 1.2;
     }
     100% {
         transform: rotate(360deg);

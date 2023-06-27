@@ -1,46 +1,63 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css?family=Agdasima&display=swap');
 @import './cursor.css';
 
-*  ,*::after , *::before { 
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* variable declare */
 :root {
     --background_color: #000;
     --font_color: #fff;
 }
+
 /* deafult value  */
-body { 
+body {
     background-color: var(--background_color);
     color: var(--font_color);
     height: 100vh;
     overflow: hidden;
     scroll-behavior: smooth;
+    cursor: none;
+    font-family: 'Agdasima', serif;
 }
 
 
-.navbar  a{ 
-   text-decoration: none;
-   color: var(--font_color);
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 4rem;
+    /* width: 100vw; */
 }
+
+.navbar a {
+    text-decoration: none;
+    color: var(--font_color);
+    margin-left: 4px;
+}
+
 /* reusable css */
 
 
-.container { 
+.container {
     display: flex;
     gap: 1rem;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     user-select: none;
 }
 
-.container .image { 
+.container .image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: 100% center;   
+    object-position: 100% center;
 }
-
